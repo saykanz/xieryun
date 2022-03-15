@@ -1,0 +1,64 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+  /* 默认有边距，都要清除 */
+  margin: 0;
+  padding: 0;
+  /*字体设置*/
+  font-size: 14px;
+  font-family: "Microsoft Yahei",sans-serif;
+  color: #ccc;
+  /* 去掉列表的原点 */
+  list-style: none;
+  /* 默认鼠标 */
+  cursor: default;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/*版心*/
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+a:hover{
+  color:#333;
+}
+
+textarea{
+  /* 边框清零 */
+  border:none;
+  /* 轮廓线清零 */
+  outline: none;
+  /* 防止文本域被随意拖拽 */
+  resize: none;
+}
+
+i{
+  /*文字样式*/
+  font-style: normal;
+}
+
+table{
+  /*边框合并*/
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after{
+  content:"";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
